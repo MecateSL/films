@@ -1,11 +1,55 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/DS-Digital.woff2') format('woff2'),
+         url('../fonts/DS-Digital.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aero-Matics-Bold';
+    src: url('../fonts/AeroMaticsBold.woff2') format('woff2'),
+         url('../fonts/AeroMaticsBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aero-Matics-Light';
+    src: url('../fonts/AeroMaticsLightRegular.woff2') format('woff2'),
+         url('../fonts/AeroMaticsLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aero-Matics';
+    src: url('../fonts/AeroMaticsRegular.woff2') format('woff2'),
+         url('../fonts/AeroMaticsRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aero-Matics-Display';
+    src: url('../fonts/AeroMaticsDisplayRegular.woff2') format('woff2'),
+         url('../fonts/AeroMaticsDisplayRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DS-Digital-Bold';
+    src: url('../fonts/DS-Digital-Bold.woff2') format('woff2'),
+         url('../fonts/DS-Digital-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 html {
-    background-color: #000000;
+    background: #000000;
+    background: url("/img/NUMEROS.png") no-repeat, -moz-linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(75,22,22,1) 100%);
+    background: url("/img/NUMEROS.png") no-repeat, -webkit-linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(75,22,22,1) 100%);
+    background: url("/img/NUMEROS.png") no-repeat, linear-gradient(0deg, rgba(0,0,0,1) 50%, rgb(75, 22, 22) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#4b1616",GradientType=1);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url(/img/NUMEROS.png);
-    background-position: bottom;
 }
 body {
     margin: 0;
@@ -14,31 +58,89 @@ body {
     height: 95%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-
-p {
-    color: #fff;
+p, h2{
+    color: rgb(255, 255, 255);
     text-align: center;
 }
-
 main {
     display: grid;
     justify-items: center;
 }
-
 footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     align-self: flex-end;
 }
-
-footer img {
+footer img { 
     height: 75px;
 }
-
 header img{
     margin: auto;
     display: block;
-    width: 50%;
+    /* width: 30%; */
+}
+.soon p {
+    font-family: 'DS-Digital-Bold';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: -moz-radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(75,22,22,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(75,22,22,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(75,22,22,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#4b1616",GradientType=1);
+}
+.soon h2 {
+    font-family: 'Aero-Matics-Bold';
+    font-weight: bold;
+    font-style: normal;
+    /* margin-top: 0; bn */
+}
+.text p {
+    font-family: 'Aero-Matics-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 23px;
+    width: 1100px;
+}
+small {
+    padding-right: 10px;
+    font-family: 'Aero-Matics-Display';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+.button {
+    border: solid 1px #fff;
+    padding: 15px 100px;
+    border-radius: 5px;
+    transition: 0.2s ease ;
+}
+.button:hover {
+    background: #fff
+}
+.button p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aero-Matics-Bold';
+    transition: 0.2s ease ;
+}
+.button:hover p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aero-Matics-Bold';
+    color: #000000;
+}
+.play img {
+    padding: 55px 60px 45px 0;
+}
+a {
+    text-decoration: none;
 }
